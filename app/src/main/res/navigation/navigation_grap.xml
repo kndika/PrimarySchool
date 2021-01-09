@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_grap"
+    app:startDestination="@id/mainActivitySchool">
+
+    <fragment
+        android:id="@+id/mainActivitySchool"
+        android:name="com.example.primaryschool.MainActivitySchool"
+        android:label="MainActivitySchool"
+        tools:layout="@layout/activity_main_school">
+        <action
+            android:id="@+id/action_mainActivitySchool_to_mainManu"
+            app:destination="@id/mainManu" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainManu"
+        android:name="com.example.primaryschool.MainManu"
+        android:label="MainManu"
+        tools:layout="@layout/activity_main_menu"/>
+</navigation>
